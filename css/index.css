@@ -1,4 +1,80 @@
-*{
-    padding: 0px;
-    margin: 0px;
+:root {
+	--primary-green: #4aab00;
+	--light-green: #75c23a;
+	--primary-gray: #4e4e4e;
+	--off-green-text: #ecffed;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/*  heading  */
+
+.header {
+	background-color: black;
+	color: var(--off-green-text);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 90px;
+	font-size: 18px;
+	padding: 0 50px;
+	margin: auto;
+	position: fixed;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo{
+	cursor: pointer;
+}
+
+.navlinks {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin: 0 10px;
+}
+
+.navitem {
+	margin: 0 5px;
+	padding: 0 15px;
+	font-size: 18px;
+	border-right: 1px solid var(--off-green-text);
+	cursor: pointer;
+}
+
+.contact {
+	border-right: none;
+}
+
+.menuicon {
+	align-items: center;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.butnowbtn {
+	align-items: center;
+	margin: 0 5px;
+}
+
+.butnowbtn button {
+	padding: 0 20px;
+	color: var(--off-green-text);
+	background-color: var(--primary-green);
+	border:none;
+	border-radius: 5px;
+	cursor: pointer;
+	height:42px;
 }
