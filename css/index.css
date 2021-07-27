@@ -33,6 +33,7 @@ html, body{
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 10;
+	top:0px;
 }
 
 .navbar {
@@ -91,22 +92,20 @@ html, body{
 /*  main section */
 
 .mainsection{
+
 	background-image: url('../images/banner_image.png');
-	/* height: 600px; */
+	height: 800px;
 	object-fit: contain;
-	/* background-position: center; */
-	background-size: contain;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: var(--off-green-text);
-	position: absolute;
-	top: 90px;
-
-
+	position: relative;
 }
 
 .infosection{
 	width:50%;
-	margin: 100px;
+	padding:200px;
 }
 
 .mainsectionheading{
@@ -133,4 +132,50 @@ html, body{
 	cursor: pointer;
 	height:42px;
 	margin: 15px 0;
+}
+
+
+
+/* About */
+
+.about{
+	margin: 50px auto;
+	padding: 50px;
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.aboutinfo{
+	width: 35%;
+}
+
+.aboutheading{
+	font-size: 60px;
+	font-weight: bold;
+	color: var(--light-green);
+		font-family: 'Noto Serif', serif;
+}
+
+.breakline{
+	border-bottom: 3px solid var(--light-green);
+	width: 23%;
+	margin-bottom: 20px;
+}
+
+.aboutpara1{
+	margin: 10px 0;
+	text-align: justify;
+}
+
+.aboutpara2{
+	margin: 10px 0;
+	text-align: justify;
+}
+
+.aboutparticularimg{
+	cursor: pointer;
+	box-shadow: 5px 5px 15px var(--primary-gray);
+	transition: all 0.3s ease-in-out;
 }
