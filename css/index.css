@@ -8,14 +8,14 @@
 * {
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
-html, body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
-
 
 /*  heading  */
 
@@ -33,7 +33,7 @@ html, body{
 	width: 100%;
 	box-sizing: border-box;
 	z-index: 10;
-	top:0px;
+	top: 0px;
 }
 
 .navbar {
@@ -42,7 +42,7 @@ html, body{
 	align-items: center;
 }
 
-.logo{
+.logo {
 	cursor: pointer;
 }
 
@@ -81,19 +81,16 @@ html, body{
 	padding: 0 20px;
 	color: var(--off-green-text);
 	background-color: var(--primary-green);
-	border:none;
+	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	height:42px;
+	height: 42px;
 }
-
-
 
 /*  main section */
 
-.mainsection{
-
-	background-image: url('../images/banner_image.png');
+.mainsection {
+	background-image: url("../images/banner_image.png");
 	height: 800px;
 	object-fit: contain;
 	background-position: center;
@@ -103,42 +100,40 @@ html, body{
 	position: relative;
 }
 
-.infosection{
-	width:50%;
-	padding:200px;
+.infosection {
+	width: 50%;
+	padding: 200px;
 }
 
-.mainsectionheading{
+.mainsectionheading {
 	font-size: 60px;
 	font-weight: bold;
 	margin: 15px 0 30px 0;
-	font-family: 'Noto Serif', serif;
+	font-family: "Noto Serif", serif;
 }
 
-.mainsectionpara{
-	width:90%;
+.mainsectionpara {
+	width: 90%;
 	font-size: 20px;
 	margin: 15px 0;
 	text-align: justify;
 }
 
-.mainsectionbtn{
+.mainsectionbtn {
 	font-size: 18px;
 	background-color: var(--light-green);
 	padding: 0 20px;
 	color: var(--off-green-text);
-	border:none;
+	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	height:42px;
+	height: 42px;
 	margin: 15px 0;
 }
 
-
-
 /* About */
 
-.about{
+.about {
 	margin: 50px auto;
 	padding: 50px;
 	width: 80%;
@@ -147,34 +142,34 @@ html, body{
 	align-items: center;
 }
 
-.aboutinfo{
+.aboutinfo {
 	width: 35%;
 }
 
-.aboutheading{
+.aboutheading {
 	font-size: 60px;
 	font-weight: bold;
 	color: var(--light-green);
-	font-family: 'Noto Serif', serif;
+	font-family: "Noto Serif", serif;
 }
 
-.breakline{
+.breakline {
 	border-bottom: 3px solid var(--light-green);
 	width: 23%;
 	margin-bottom: 20px;
 }
 
-.aboutpara1{
+.aboutpara1 {
 	margin: 10px 0;
 	text-align: justify;
 }
 
-.aboutpara2{
+.aboutpara2 {
 	margin: 10px 0;
 	text-align: justify;
 }
 
-.aboutparticularimg{
+.aboutparticularimg {
 	cursor: pointer;
 	box-shadow: 5px 5px 15px var(--primary-gray);
 	transition: all 0.3s ease-in-out;
@@ -182,8 +177,8 @@ html, body{
 
 /* specialities */
 
-.specialities{
-	background-image: url('../images/speciality_bg.png');
+.specialities {
+	background-image: url("../images/speciality_bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	object-fit: cover;
@@ -191,7 +186,7 @@ html, body{
 	width: 100%;
 }
 
-.content{
+.content {
 	width: 100%;
 	margin: auto;
 	padding: 20px;
@@ -201,50 +196,135 @@ html, body{
 	align-items: center;
 }
 
- .specialitiesinfo{
+.specialitiesinfo {
 	margin: 10px auto;
 	width: 60%;
-
 }
 
-.specialitiesinfoheader{
+.specialitiesinfoheader {
 	color: var(--light-green);
 	font-size: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Noto Serif', serif;
-	margin:30px;
+	font-family: "Noto Serif", serif;
+	margin: 30px;
 }
 
-.specialitiesinfopara{
+.specialitiesinfopara {
 	font-size: 24px;
 	color: var(--off-green-text);
 	margin: 30px;
 	text-align: center;
 }
-.specialitiesdishs{
+.specialitiesdishs {
 	display: flex;
 	justify-content: space-between;
-	 align-items: center;
+	align-items: center;
 }
 
-.card{
+.card {
 	background-color: var(--off-green-text);
 	margin: 10px;
 	width: 264px;
 	height: 300px;
 }
 
-.dishimg{
+.dishimg {
 	align-items: center;
 	padding: 5px;
 }
 
-.dishname{
+.dishname {
 	margin: auto;
 	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.menuhead {
+	margin: auto;
+	margin-bottom: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.menuheader {
+	color: var(--light-green);
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Noto Serif", serif;
+	margin: 10px;
+}
+
+.menubreakline {
+	border-bottom: 3px solid var(--light-green);
+	width: 13%;
+	margin: 20px;
+}
+
+.mainheading {
+	font-size: 32px;
+	color: var(--light-green);
+}
+
+.mainbl {
+	width: 13%;
+}
+
+.fullmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	width: 70%;
+}
+
+.itemname {
+	color: var(--light-green);
+	font-family: "Noto Serif", serif;
+	font-size: 24px;
+}
+
+.menubar {
+	width: 90%;
+}
+
+.paritem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.iteminfo {
+	width: 60%;
+}
+
+.itemprice {
+	width: 20%;
+	color: var(--light-green);
+	font-size: 40px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.mainitem {
+	margin: 5px 0 30px 0;
+}
+
+.mainbtn{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.mainbtns{
+	margin: 50px auto;
 }
