@@ -100,7 +100,6 @@ body {
 	background-repeat: no-repeat;
 	object-fit: cover;
 	background-size: cover;
-	padding: 100px 0;
 }
 
 .menuicon {
@@ -170,12 +169,10 @@ body {
 
 .about {
 	margin: 0px auto;
-	padding: 40px;
-	/* width: 80%; */
+	padding: 10px 150px;
 	width: 1280px;
-	/* display: flex;
-	justify-content: space-around;
-	align-items: center; */
+	height: 100%;
+	margin: auto;
 }
 
 .aboutinfo {
@@ -189,6 +186,8 @@ body {
 .aboutImg{
 	padding: 30px;
 	margin: 30px;
+	display: inline;
+	float: right;
 }
 
 .aboutheading {
@@ -283,11 +282,10 @@ body {
 }
 
 .dishname {
-	margin: auto;
+	margin: 20px 13px;
 	height: 60px;
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 
 .menuhead {
@@ -379,12 +377,10 @@ body {
 .mainbtn {
 	width: 100%;
 	margin: auto;
-	display: flex;
-	justify-content: center;
 }
 
 .mainbtns {
-	margin: 50px auto;
+	margin: 50px 651px 10px  651px;
 }
 
 /* book section */
@@ -424,6 +420,7 @@ body {
 	display: inline;
 	float: left;
 	width: 82%;
+	margin: 30px 120px;
 }
 
 .formsection {
@@ -441,20 +438,13 @@ body {
 	margin:auto;
 }
 
-form {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
 .timeinput {
 	width: 185px;
 	padding: 5px;
 }
 
 .bookbtn {
-	margin: 50px;
+	margin: 30px 650px;
 	width: 200px;
 	font-size: 24px;
 }
@@ -470,9 +460,6 @@ form {
 	padding: 10px 20px;
 	height: 124px;
 	color: var(--off-green-text);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -497,6 +484,7 @@ form {
 .logocopy{
 	display: inline;
 	float: left;
+	margin:30px;
 
 }
 
@@ -507,6 +495,7 @@ form {
 .socialmedialogos{
 	display: inline;
 	float: right;
+	margin: 30px 10px;
 }
 
 .socialmedialinks {
