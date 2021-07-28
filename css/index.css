@@ -17,14 +17,13 @@ body {
 	height: 100%;
 }
 
-body{
+body {
 	overflow-x: hidden;
 }
 
-
 /* common attributes */
 
-.btn{
+.btn {
 	height: 42px;
 	font-size: 18px;
 	color: var(--off-green-text);
@@ -39,9 +38,6 @@ body{
 .header {
 	background-color: black;
 	color: var(--off-green-text);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	height: 90px;
 	font-size: 18px;
 	padding: 0 50px;
@@ -53,22 +49,37 @@ body{
 	top: 0px;
 }
 
+.links {
+	list-style: none;
+	color: var(--off-green-text);
+	text-decoration: none;
+}
+
 .navbar {
-	display: flex;
-	justify-content: space-around;
+	display: inline;
+	float: right;
 	align-items: center;
+	margin: 25px;
 }
 
 .logo {
 	cursor: pointer;
+	display: inline;
+	margin: auto;
 }
 
 .navlinks {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
-	margin: 0 10px;
+	margin: 10px auto;
+	display: inline;
+	float: left;
+}
+
+.navlinks li {
+	display: inline;
+}
+
+.headerlogo {
+	margin: 25px;
 }
 
 .navitem {
@@ -83,22 +94,26 @@ body{
 	border-right: none;
 }
 
-
-.menu{
+.menu {
 	background-image: url("../images/menu_bg.png");
 	background-position: start;
 	background-repeat: no-repeat;
 	object-fit: cover;
 	background-size: cover;
+	padding: 100px 0;
 }
 
 .menuicon {
 	align-items: center;
-	margin: 0 20px;
+	margin: 10px 20px;
 	cursor: pointer;
+	display: inline;
+	float: left;
 }
 
 .butnowbtn {
+	display: inline;
+	float: left;
 	align-items: center;
 	margin: 0 5px;
 }
@@ -117,18 +132,19 @@ body{
 
 .mainsection {
 	background-image: url("../images/banner_image.png");
-	height: 800px;
 	object-fit: contain;
-	background-position: center;
-	background-size: cover;
+	background-position: end;
+	background-size: contain;
 	background-repeat: no-repeat;
 	color: var(--off-green-text);
 	position: relative;
+	margin-top: 90px;
+	box-sizing: border-box;
 }
 
 .infosection {
 	width: 50%;
-	padding: 200px;
+	padding: 100px;
 }
 
 .mainsectionheading {
@@ -153,16 +169,26 @@ body{
 /* About */
 
 .about {
-	margin: 50px auto;
-	padding: 50px;
-	width: 80%;
-	display: flex;
+	margin: 0px auto;
+	padding: 40px;
+	/* width: 80%; */
+	width: 1280px;
+	/* display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: center; */
 }
 
 .aboutinfo {
 	width: 35%;
+	display: inline;
+	float: left;
+	margin: 30px;
+	padding:30px;
+}
+
+.aboutImg{
+	padding: 30px;
+	margin: 30px;
 }
 
 .aboutheading {
@@ -191,6 +217,8 @@ body{
 }
 
 .aboutparticularimg {
+	display: inline;
+	float: left;
 	cursor: pointer;
 	box-shadow: 5px 5px 15px var(--primary-gray);
 	transition: all 0.3s ease-in-out;
@@ -199,38 +227,34 @@ body{
 /* specialities */
 
 .specialities {
+	clear: both;
 	background-image: url("../images/speciality_bg.png");
-	background-position: center;
+	background-position: start;
 	background-repeat: no-repeat;
-	object-fit: cover;
+	object-fit: contain;
 	background-size: cover;
+	padding: 50px;
 	width: 100%;
+	height: 70%;
 }
 
 .content {
 	width: 100%;
 	margin: auto;
-	padding: 100px 20px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 }
 
 .specialitiesinfo {
 	margin: 10px auto;
-	width: 60%;
+	width: 960px;
 }
 
 .specialitiesinfoheader {
 	color: var(--light-green);
 	font-size: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+
+	margin: auto;
+	text-align: center;
 	font-family: "Noto Serif", serif;
-	margin: 30px;
 }
 
 .specialitiesinfopara {
@@ -240,17 +264,17 @@ body{
 	text-align: center;
 }
 .specialitiesdishs {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	margin: 0 150px;
 }
 
 .card {
-	background-color: var(--off-green-text);
+	background-color: white;
 	margin: 10px;
 	width: 264px;
 	height: 300px;
 	box-sizing: border-box;
+	display: inline;
+	float: left;
 }
 
 .dishimg {
@@ -268,32 +292,28 @@ body{
 
 .menuhead {
 	margin: auto;
-	margin-bottom: 30px;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 }
 
 .menuheader {
 	color: var(--light-green);
 	font-size: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	font-family: "Noto Serif", serif;
-	margin: 10px;
+	margin: 10px auto;
 }
 
 .menubreakline {
 	border-bottom: 3px solid var(--light-green);
 	width: 13%;
-	margin: 20px;
+	margin: 20px auto;
+
 }
 
-.menupara{
+.menupara {
 	font-size: 20px;
+	margin: auto;
+	text-align: center;
 }
 
 .mainheading {
@@ -306,12 +326,20 @@ body{
 }
 
 .fullmenu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin: auto;
 	width: 80%;
-	height: 100%;
+}
+
+.firstpart{
+	display: inline;
+	float: left;
+	width: 48%;
+}
+
+.secondpart{
+	display: inline;
+	float:right;
+	width: 48%;
 }
 
 .itemname {
@@ -325,12 +353,13 @@ body{
 }
 
 .paritem {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: inline;
+	float:left;
 }
 
 .iteminfo {
+	display: inline;
+	float: left;
 	font-size: 20px;
 	width: 80%;
 }
@@ -339,8 +368,8 @@ body{
 	width: 20%;
 	color: var(--light-green);
 	font-size: 40px;
-	display: flex;
-	flex-direction: row-reverse;
+	display: inline;
+	float:right;
 }
 
 .mainitem {
@@ -358,14 +387,9 @@ body{
 	margin: 50px auto;
 }
 
-
 /* book section */
 
 .booksection {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	background-image: url("../images/footer_bg.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -375,15 +399,12 @@ body{
 	padding: 30px;
 }
 
-.bookinfo{
+.bookinfo {
 	font-size: 24px;
 }
 
 .headsection {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	margin: 50px;
 }
 
@@ -397,59 +418,54 @@ body{
 .labels {
 	font-size: 22px;
 	color: var(--light-green);
-
 }
 
-.form{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 90%;
+.form {
+	display: inline;
+	float: left;
+	width: 82%;
 }
 
-.formsection{
+.formsection {
 	margin: 5px 20px;
+	display: inline;
+	float: left;
 }
 
-
-.inputfield{
+.inputfield {
 	font-size: 22px;
 	padding: 5px 10px;
 	border: none;
 	outline: none;
-	width: 100%;
 	border-radius: 1px;
+	margin:auto;
 }
 
-form{
+form {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.timeinput{
+.timeinput {
 	width: 185px;
 	padding: 5px;
 }
 
-
-.bookbtn{
+.bookbtn {
 	margin: 50px;
 	width: 200px;
 	font-size: 24px;
 }
 
-.dateinput{
+.dateinput {
 	padding: 5px;
 }
 
-
-
 /* footer section */
 
-
-.footer{
+.footer {
 	background-color: black;
 	padding: 10px 20px;
 	height: 124px;
@@ -460,37 +476,45 @@ form{
 	align-items: center;
 }
 
-
-.icon{
+.icon {
 	width: 32px;
 	height: 32px;
 	border: 1px solid var(--off-green-text);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 5px;
+	margin: 5px 5px;
+	display: inline;
+	float: left;
 }
 
-.copyright{
+.copyright {
 	font-size: 14px;
 }
 
-.footercontent{
+.footercontent {
 	width: 80%;
 	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
-.socialmedialinks{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.logocopy{
+	display: inline;
+	float: left;
 
 }
 
-.follow{
+.icons{
+	margin: 10px 11px;
+}
+
+.socialmedialogos{
+	display: inline;
+	float: right;
+}
+
+.socialmedialinks {
+	display: inline;
+	margin: auto;
+}
+
+.follow {
 	text-align: center;
 	color: var(--light-green);
 	font-size: 20px;
