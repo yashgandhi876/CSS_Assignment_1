@@ -21,6 +21,19 @@ body{
 	overflow-x: hidden;
 }
 
+
+/* common attributes */
+
+.btn{
+	height: 42px;
+	font-size: 18px;
+	color: var(--off-green-text);
+	background-color: var(--light-green);
+	border-radius: 2px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
 /*  heading  */
 
 .header {
@@ -133,14 +146,7 @@ body{
 }
 
 .mainsectionbtn {
-	font-size: 18px;
-	background-color: var(--light-green);
 	padding: 0 20px;
-	color: var(--off-green-text);
-	border: none;
-	border-radius: 2px;
-	cursor: pointer;
-	height: 42px;
 	margin: 15px 0;
 }
 
@@ -173,11 +179,13 @@ body{
 }
 
 .aboutpara1 {
+	font-size: 24px;
 	margin: 10px 0;
 	text-align: justify;
 }
 
 .aboutpara2 {
+	font-size: 24px;
 	margin: 10px 0;
 	text-align: justify;
 }
@@ -202,11 +210,12 @@ body{
 .content {
 	width: 100%;
 	margin: auto;
-	padding: 20px;
+	padding: 100px 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .specialitiesinfo {
@@ -241,6 +250,7 @@ body{
 	margin: 10px;
 	width: 264px;
 	height: 300px;
+	box-sizing: border-box;
 }
 
 .dishimg {
@@ -282,6 +292,10 @@ body{
 	margin: 20px;
 }
 
+.menupara{
+	font-size: 20px;
+}
+
 .mainheading {
 	font-size: 32px;
 	color: var(--light-green);
@@ -296,7 +310,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	height: 100%;
 }
 
@@ -317,7 +331,8 @@ body{
 }
 
 .iteminfo {
-	width: 60%;
+	font-size: 20px;
+	width: 80%;
 }
 
 .itemprice {
@@ -358,6 +373,10 @@ body{
 	background-size: cover;
 	color: var(--off-green-text);
 	padding: 30px;
+}
+
+.bookinfo{
+	font-size: 24px;
 }
 
 .headsection {
@@ -411,7 +430,7 @@ form{
 
 .timeinput{
 	width: 185px;
-	padding: 5px 25px;
+	padding: 5px;
 }
 
 
