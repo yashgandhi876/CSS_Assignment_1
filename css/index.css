@@ -14,11 +14,16 @@
 html,
 body {
 	width: 100%;
-	height: 100%;
 }
 
 body {
 	overflow-x: hidden;
+}
+
+body:after{
+	content:"";
+	display: block;
+	clear: both;
 }
 
 /* common attributes */
@@ -40,7 +45,6 @@ body {
 	color: var(--off-green-text);
 	height: 90px;
 	font-size: 18px;
-	padding: 0 50px;
 	margin: auto;
 	position: fixed;
 	width: 100%;
@@ -56,21 +60,18 @@ body {
 }
 
 .navbar {
-	display: inline;
 	float: right;
 	align-items: center;
-	margin: 25px;
+	margin: 25px auto;
 }
 
 .logo {
-	cursor: pointer;
-	display: inline;
+	float:left;
 	margin: auto;
 }
 
 .navlinks {
 	margin: 10px auto;
-	display: inline;
 	float: left;
 }
 
@@ -79,71 +80,54 @@ body {
 }
 
 .headerlogo {
-	margin: 25px;
+	margin: 25px auto;
 }
 
+.headercontent::after{
+	content: "";
+	display: block;
+	clear: both;
+}
 .navitem {
 	margin: 0 5px;
 	padding: 0 15px;
 	font-size: 18px;
 	border-right: 1px solid var(--off-green-text);
-	cursor: pointer;
 }
 
 .contact {
 	border-right: none;
 }
 
-.menu {
-	background-image: url("../images/menu_bg.png");
-	background-position: start;
-	background-repeat: no-repeat;
-	object-fit: cover;
-	background-size: cover;
+.headercontent{
+	width: 95%;
+	margin: auto;
 }
 
-.menuicon {
-	align-items: center;
-	margin: 10px 20px;
-	cursor: pointer;
-	display: inline;
-	float: left;
-}
-
-.butnowbtn {
-	display: inline;
-	float: left;
-	align-items: center;
-	margin: 0 5px;
-}
-
-.butnowbtn button {
-	padding: 0 20px;
-	color: var(--off-green-text);
-	background-color: var(--primary-green);
-	border: none;
-	border-radius: 2px;
-	cursor: pointer;
-	height: 42px;
-}
 
 /*  main section */
 
 .mainsection {
 	background-image: url("../images/banner_image.png");
-	object-fit: contain;
-	background-position: end;
-	background-size: contain;
+	object-fit: cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	color: var(--off-green-text);
 	position: relative;
-	margin-top: 90px;
 	box-sizing: border-box;
+	margin: auto;
+	margin-top: 90px;
+	width:100%;
+}
+
+.maincontent{
+	width:788px;
 }
 
 .infosection {
-	width: 50%;
+	width:1280px;
 	padding: 100px;
+	margin:auto;
 }
 
 .mainsectionheading {
@@ -168,25 +152,24 @@ body {
 /* About */
 
 .about {
-	margin: 0px auto;
-	padding: 10px 150px;
 	width: 1280px;
-	height: 100%;
-	margin: auto;
+	margin: 30px auto;
+}
+
+.about:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .aboutinfo {
 	width: 35%;
-	display: inline;
 	float: left;
-	margin: 30px;
-	padding:30px;
 }
 
 .aboutImg{
-	padding: 30px;
-	margin: 30px;
-	display: inline;
+	/* padding: 30px;
+	margin: 30px; */
 	float: right;
 }
 
@@ -216,9 +199,7 @@ body {
 }
 
 .aboutparticularimg {
-	display: inline;
 	float: left;
-	cursor: pointer;
 	box-shadow: 5px 5px 15px var(--primary-gray);
 	transition: all 0.3s ease-in-out;
 }
@@ -228,29 +209,31 @@ body {
 .specialities {
 	clear: both;
 	background-image: url("../images/speciality_bg.png");
-	background-position: start;
+	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: contain;
 	background-size: cover;
-	padding: 50px;
 	width: 100%;
-	height: 70%;
+}
+
+.specialities:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .content {
-	width: 100%;
+	width: 1280px;
 	margin: auto;
+	padding: 130px 0;
 }
 
 .specialitiesinfo {
 	margin: 10px auto;
-	width: 960px;
 }
 
 .specialitiesinfoheader {
 	color: var(--light-green);
 	font-size: 60px;
-
 	margin: auto;
 	text-align: center;
 	font-family: "Noto Serif", serif;
@@ -263,16 +246,21 @@ body {
 	text-align: center;
 }
 .specialitiesdishs {
-	margin: 0 150px;
+	/* margin: 0 150px; */
+}
+
+.specialitiesdishs::after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .card {
 	background-color: white;
-	margin: 10px;
+	margin: 10px 28px;
 	width: 264px;
 	height: 300px;
 	box-sizing: border-box;
-	display: inline;
 	float: left;
 }
 
@@ -282,8 +270,6 @@ body {
 }
 
 .dishname {
-	margin: 20px 13px;
-	height: 60px;
 	align-items: center;
 	text-align: center;
 }
@@ -303,7 +289,7 @@ body {
 
 .menubreakline {
 	border-bottom: 3px solid var(--light-green);
-	width: 13%;
+	width: 120px;
 	margin: 20px auto;
 
 }
@@ -320,22 +306,26 @@ body {
 }
 
 .mainbl {
-	width: 13%;
+	width: 90px;
 }
 
 .fullmenu {
-	margin: auto;
-	width: 80%;
+
+}
+
+.fullmenu:after{
+	content:"";
+	display: block;
+	clear: both;
 }
 
 .firstpart{
-	display: inline;
 	float: left;
 	width: 48%;
 }
 
 .secondpart{
-	display: inline;
+
 	float:right;
 	width: 48%;
 }
@@ -346,28 +336,25 @@ body {
 	font-size: 24px;
 }
 
-.menubar {
-	width: 90%;
-}
-
 .paritem {
-	display: inline;
 	float:left;
 }
 
 .iteminfo {
-	display: inline;
 	float: left;
 	font-size: 20px;
 	width: 80%;
+	margin-bottom: 20px;
 }
 
 .itemprice {
 	width: 20%;
 	color: var(--light-green);
 	font-size: 40px;
-	display: inline;
+
 	float:right;
+	text-align: end;
+
 }
 
 .mainitem {
@@ -380,7 +367,8 @@ body {
 }
 
 .mainbtns {
-	margin: 50px 651px 10px  651px;
+	margin: 30px auto;
+	display: block;
 }
 
 /* book section */
@@ -417,16 +405,21 @@ body {
 }
 
 .form {
-	display: inline;
 	float: left;
-	width: 82%;
-	margin: 30px 120px;
+	margin: 60px auto;
 }
 
 .formsection {
-	margin: 5px 20px;
-	display: inline;
+	margin: auto 5px;
 	float: left;
+}
+
+.fistinput{
+	margin-left: 0px;
+}
+
+.lastinput{
+	margin-right: 0px;
 }
 
 .inputfield {
@@ -435,29 +428,34 @@ body {
 	border: none;
 	outline: none;
 	border-radius: 1px;
-	margin:auto;
+	margin:10px auto;
+	width:290px;
 }
 
-.timeinput {
-	width: 185px;
-	padding: 5px;
+.form::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.bookbtndiv{
+	clear: both;
+	margin: 20px auto;
 }
 
 .bookbtn {
-	margin: 30px 650px;
+	display: block;
+
+	margin: 20px auto;
 	width: 200px;
 	font-size: 24px;
-}
-
-.dateinput {
-	padding: 5px;
 }
 
 /* footer section */
 
 .footer {
 	background-color: black;
-	padding: 10px 20px;
+	padding: 10px auto;
 	height: 124px;
 	color: var(--off-green-text);
 	align-items: center;
@@ -468,7 +466,6 @@ body {
 	height: 32px;
 	border: 1px solid var(--off-green-text);
 	margin: 5px 5px;
-	display: inline;
 	float: left;
 }
 
@@ -477,34 +474,93 @@ body {
 }
 
 .footercontent {
-	width: 80%;
+	width: 95%;
 	margin: auto;
 }
 
+.footercontent::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
 .logocopy{
-	display: inline;
+
 	float: left;
-	margin:30px;
+	margin:30px auto;
 
 }
 
 .icons{
-	margin: 10px 11px;
+	margin: 10px auto;
+	display: block;
 }
 
 .socialmedialogos{
-	display: inline;
 	float: right;
-	margin: 30px 10px;
+	margin: 30px auto;
 }
 
 .socialmedialinks {
-	display: inline;
 	margin: auto;
+}
+
+.socialmedialinks::after{
+	content:"";
+	display: block;
+	clear: both;
 }
 
 .follow {
 	text-align: center;
 	color: var(--light-green);
 	font-size: 20px;
+}
+
+
+.container{
+	width:1280px;
+	margin:auto;
+	padding: 100px 0;
+}
+
+.container:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+
+.menu {
+	background-image: url("../images/menu_bg.png");
+	background-position: start;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	background-size: cover;
+}
+
+.menuicon {
+	align-items: center;
+	margin: 10px 20px;
+	float: left;
+}
+
+.butnowbtn {
+	float: left;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.butnowbtn button {
+	padding: 0 20px;
+	color: var(--off-green-text);
+	background-color: var(--primary-green);
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	height: 42px;
+}
+
+
+.aboutbreakline{
+	width:150px
 }
