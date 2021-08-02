@@ -20,8 +20,8 @@ body {
 	overflow-x: hidden;
 }
 
-body:after{
-	content:"";
+body:after {
+	content: "";
 	display: block;
 	clear: both;
 }
@@ -33,7 +33,7 @@ body:after{
 	font-size: 18px;
 	color: var(--off-green-text);
 	background-color: var(--light-green);
-	border-radius: 2px;
+	border-radius: 4px;
 	outline: none;
 	border: none;
 	cursor: pointer;
@@ -66,7 +66,7 @@ body:after{
 }
 
 .logo {
-	float:left;
+	float: left;
 	margin: auto;
 }
 
@@ -77,19 +77,19 @@ body:after{
 
 .navlinks li {
 	display: inline;
+	letter-spacing: 0.5px;
 }
 
 .headerlogo {
 	margin: 25px auto;
 }
 
-.headercontent::after{
+.headercontent::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 .navitem {
-	margin: 0 5px;
 	padding: 0 15px;
 	font-size: 18px;
 	border-right: 1px solid var(--off-green-text);
@@ -99,11 +99,10 @@ body:after{
 	border-right: none;
 }
 
-.headercontent{
+.headercontent {
 	width: 95%;
 	margin: auto;
 }
-
 
 /*  main section */
 
@@ -117,17 +116,17 @@ body:after{
 	box-sizing: border-box;
 	margin: auto;
 	margin-top: 90px;
-	width:100%;
+	width: 100%;
 }
 
-.maincontent{
-	width:788px;
+.maincontent {
+	width: 788px;
 }
 
 .infosection {
-	width:1280px;
+	width: 1280px;
 	padding: 100px;
-	margin:auto;
+	margin: auto;
 }
 
 .mainsectionheading {
@@ -135,18 +134,22 @@ body:after{
 	font-weight: bold;
 	margin: 15px 0 30px 0;
 	font-family: "Noto Serif", serif;
+	letter-spacing: 0px;
 }
 
 .mainsectionpara {
 	width: 90%;
 	font-size: 20px;
 	margin: 15px 0;
-	text-align: justify;
+	text-align: left;
+	letter-spacing: 0px;
 }
 
 .mainsectionbtn {
-	padding: 0 20px;
-	margin: 15px 0;
+	letter-spacing: 0px;
+	font-size: 18px;
+	height: 50px;
+	width: 164px;
 }
 
 /* About */
@@ -156,46 +159,51 @@ body:after{
 	margin: 30px auto;
 }
 
-.about:after{
+.aboutbtn{
+	margin:50px 0;
+	width: 152px;
+}
+
+.about:after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
 .aboutinfo {
-	width: 35%;
+	width: 550px;
 	float: left;
+	margin: 115px auto;
 }
 
-.aboutImg{
-	/* padding: 30px;
-	margin: 30px; */
+.aboutImg {
 	float: right;
 }
 
 .aboutheading {
+	letter-spacing: 0px;
 	font-size: 60px;
 	font-weight: bold;
 	color: var(--light-green);
 	font-family: "Noto Serif", serif;
+
 }
 
 .breakline {
-	border-bottom: 3px solid var(--light-green);
-	width: 23%;
+	border-bottom: 2px solid var(--light-green);
 	margin-bottom: 20px;
 }
 
 .aboutpara1 {
 	font-size: 24px;
 	margin: 10px 0;
-	text-align: justify;
+	text-align: left;
 }
 
 .aboutpara2 {
 	font-size: 24px;
 	margin: 10px 0;
-	text-align: justify;
+	text-align: left;
 }
 
 .aboutparticularimg {
@@ -215,7 +223,7 @@ body:after{
 	width: 100%;
 }
 
-.specialities:after{
+.specialities:after {
 	content: "";
 	display: block;
 	clear: both;
@@ -237,6 +245,7 @@ body:after{
 	margin: auto;
 	text-align: center;
 	font-family: "Noto Serif", serif;
+	font-weight: bold;
 }
 
 .specialitiesinfopara {
@@ -244,12 +253,10 @@ body:after{
 	color: var(--off-green-text);
 	margin: 30px;
 	text-align: center;
+	width: 752px;
+	margin: 30px auto;
 }
-.specialitiesdishs {
-	/* margin: 0 150px; */
-}
-
-.specialitiesdishs::after{
+.specialitiesdishs::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -267,11 +274,23 @@ body:after{
 .dishimg {
 	align-items: center;
 	padding: 5px;
+	padding-bottom: 0px;
 }
 
 .dishname {
+	margin: 25px auto;
 	align-items: center;
 	text-align: center;
+}
+
+.menubtn {
+	height: 54px;
+}
+
+.dishname::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .menuhead {
@@ -285,13 +304,19 @@ body:after{
 	text-align: center;
 	font-family: "Noto Serif", serif;
 	margin: 10px auto;
+	font-weight: bold;
+}
+
+.menubar::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .menubreakline {
 	border-bottom: 3px solid var(--light-green);
 	width: 120px;
 	margin: 20px auto;
-
 }
 
 .menupara {
@@ -303,62 +328,67 @@ body:after{
 .mainheading {
 	font-size: 32px;
 	color: var(--light-green);
+	font-family: "Noto Serif", serif;
+	font-weight: bold;
+	letter-spacing: 1.6px;
 }
 
 .mainbl {
-	width: 90px;
+	width: 98px;
+	border-bottom: 3px solid var(--light-green);
 }
 
 .fullmenu {
-
 }
 
-.fullmenu:after{
-	content:"";
+.fullmenu:after {
+	content: "";
 	display: block;
 	clear: both;
 }
 
-.firstpart{
+.firstpart {
 	float: left;
-	width: 48%;
+	width: 45%;
 }
 
-.secondpart{
-
-	float:right;
-	width: 48%;
+.secondpart {
+	float: right;
+	width: 45%;
 }
 
 .itemname {
 	color: var(--light-green);
 	font-family: "Noto Serif", serif;
 	font-size: 24px;
+	letter-spacing: 0.24px;
 }
 
-.paritem {
-	float:left;
+.paritem::after {
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .iteminfo {
+	letter-spacing: 0.2px;
 	float: left;
 	font-size: 20px;
 	width: 80%;
 	margin-bottom: 20px;
+	font-family: "Noto Serif", serif;
 }
 
 .itemprice {
-	width: 20%;
+	letter-spacing: 2px;
 	color: var(--light-green);
 	font-size: 40px;
-
-	float:right;
 	text-align: end;
-
+	font-family: "Noto Serif", serif;
 }
 
 .mainitem {
-	margin: 5px 0 30px 0;
+	margin: 5px 0;
 }
 
 .mainbtn {
@@ -402,10 +432,11 @@ body:after{
 .labels {
 	font-size: 22px;
 	color: var(--light-green);
+	font-family: "Noto Serif", serif;
+	letter-spacing: 0.22px;
 }
 
 .form {
-	float: left;
 	margin: 60px auto;
 }
 
@@ -414,41 +445,46 @@ body:after{
 	float: left;
 }
 
-.fistinput{
+.fistinput {
 	margin-left: 0px;
 }
 
-.lastinput{
+.lastinput {
 	margin-right: 0px;
 }
 
 .inputfield {
 	font-size: 22px;
-	padding: 5px 10px;
+	padding: 0px 5px;
 	border: none;
 	outline: none;
 	border-radius: 1px;
-	margin:10px auto;
-	width:290px;
+	margin: 10px auto;
+	width: 290px;
+	height: 54px;
+	font-family: "Noto Serif", serif;
 }
 
-.form::after{
+.form::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.bookbtndiv{
+.bookbtndiv {
 	clear: both;
 	margin: 20px auto;
 }
 
 .bookbtn {
+	letter-spacing: 0.24px;
 	display: block;
-
 	margin: 20px auto;
-	width: 200px;
+	width: 245px;
 	font-size: 24px;
+	border-radius: 0px;
+	height: 56px;
+	font-family: "Noto Serif", serif;
 }
 
 /* footer section */
@@ -471,6 +507,8 @@ body:after{
 
 .copyright {
 	font-size: 14px;
+	font-family: "Noto Serif", serif;
+	letter-spacing: 0.76px;
 }
 
 .footercontent {
@@ -478,35 +516,33 @@ body:after{
 	margin: auto;
 }
 
-.footercontent::after{
+.footercontent::after {
 	content: "";
 	display: block;
 	clear: both;
 }
 
-.logocopy{
-
+.logocopy {
 	float: left;
-	margin:30px auto;
-
+	margin: 30px auto;
 }
 
-.icons{
+.icons {
 	margin: 10px auto;
 	display: block;
 }
 
-.socialmedialogos{
+.socialmedialogos {
 	float: right;
-	margin: 30px auto;
+	margin: 20px auto;
 }
 
 .socialmedialinks {
 	margin: auto;
 }
 
-.socialmedialinks::after{
-	content:"";
+.socialmedialinks::after {
+	content: "";
 	display: block;
 	clear: both;
 }
@@ -517,17 +553,16 @@ body:after{
 	font-size: 20px;
 }
 
-
-.container{
-	width:1280px;
-	margin:auto;
+.container {
+	width: 1280px;
+	margin: auto;
 	padding: 100px 0;
 }
 
-.container:after{
-	content:"";
+.container:after {
+	content: "";
 	display: block;
-	clear:both;
+	clear: both;
 }
 
 .menu {
@@ -546,21 +581,20 @@ body:after{
 
 .butnowbtn {
 	float: left;
-	align-items: center;
-	margin: 0 5px;
 }
 
-.butnowbtn button {
-	padding: 0 20px;
+.aboutbreakline {
+	width: 166px;
+}
+
+.buybtn {
 	color: var(--off-green-text);
-	background-color: var(--primary-green);
-	border: none;
-	border-radius: 2px;
-	cursor: pointer;
 	height: 42px;
+	width: 120px;
+	padding: 0;
+	letter-spacing: 0.45px;
 }
 
-
-.aboutbreakline{
-	width:150px
+.dishnamep {
+	font-family: "Noto Serif", serif;
 }
