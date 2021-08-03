@@ -272,6 +272,9 @@ body:after {
 	float: left;
 }
 
+.cardimgs{
+	max-height: 226px;
+}
 .dishimg {
 	align-items: center;
 	padding: 5px;
@@ -279,9 +282,10 @@ body:after {
 }
 
 .dishname {
-	margin: 25px auto;
+	margin: 26px auto;
 	align-items: center;
 	text-align: center;
+	color:#585858;
 }
 
 .menubtn {
