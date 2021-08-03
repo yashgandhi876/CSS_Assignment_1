@@ -33,7 +33,7 @@ body:after {
 	height: 42px;
 	font-size: 18px;
 	color: var(--off-green-text);
-	background-color: var(--light-green);
+	background-color: var(--primary-green);
 	border-radius: 4px;
 	outline: none;
 	border: none;
@@ -56,8 +56,11 @@ body:after {
 
 .links {
 	list-style: none;
-	color: var(--off-green-text);
+	/* color: var(--off-green-text); */
+	color: #FFFFFF;
 	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-size: 18px;
 }
 
 .navbar {
@@ -79,6 +82,7 @@ body:after {
 .navlinks li {
 	display: inline;
 	letter-spacing: 0.5px;
+
 }
 
 .headerlogo {
@@ -132,9 +136,9 @@ body:after {
 
 .mainsectionheading {
 	font-size: 60px;
-	font-weight: bold;
 	margin: 15px 0 30px 0;
 	font-family: "Noto Serif", serif;
+	font-weight: 700;
 	letter-spacing: 0px;
 }
 
@@ -184,14 +188,16 @@ body:after {
 .aboutheading {
 	letter-spacing: 0px;
 	font-size: 60px;
-	font-weight: bold;
+	font-weight: 700;
 	color: var(--light-green);
 	font-family: "Noto Serif", serif;
 
 }
 
 .breakline {
-	border-bottom: 2px solid var(--light-green);
+	margin:0px;
+	padding: 0px;
+	/* border-bottom: 2px solid var(--light-green); */
 	margin-bottom: 20px;
 }
 
@@ -246,7 +252,7 @@ body:after {
 	margin: auto;
 	text-align: center;
 	font-family: "Noto Serif", serif;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .specialitiesinfopara {
@@ -309,7 +315,7 @@ body:after {
 	text-align: center;
 	font-family: "Noto Serif", serif;
 	margin: 10px auto;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .menubar::after {
@@ -319,7 +325,7 @@ body:after {
 }
 
 .menubreakline {
-	border-bottom: 3px solid var(--light-green);
+	border-bottom: 6px solid var(--primary-green);
 	width: 120px;
 	margin: 20px auto;
 }
@@ -334,16 +340,13 @@ body:after {
 	font-size: 32px;
 	color: var(--light-green);
 	font-family: "Noto Serif", serif;
-	font-weight: bold;
+	font-weight: 700;
 	letter-spacing: 1.6px;
 }
 
 .mainbl {
 	width: 98px;
-	border-bottom: 3px solid var(--light-green);
-}
-
-.fullmenu {
+	border-bottom: 6px solid var(--primary-green);
 }
 
 .fullmenu:after {
@@ -367,6 +370,7 @@ body:after {
 	font-family: "Noto Serif", serif;
 	font-size: 24px;
 	letter-spacing: 0.24px;
+	font-weight: 400;
 }
 
 .paritem::after {
@@ -382,6 +386,7 @@ body:after {
 	width: 80%;
 	margin-bottom: 20px;
 	font-family: "Noto Serif", serif;
+	font-weight: 400;
 }
 
 .itemprice {
@@ -390,6 +395,7 @@ body:after {
 	font-size: 40px;
 	text-align: end;
 	font-family: "Noto Serif", serif;
+	font-weight: 700;
 }
 
 .mainitem {
@@ -432,6 +438,7 @@ body:after {
 	font-size: 60px;
 	font-family: "Noto Serif", serif;
 	margin: 5px;
+	font-weight: 700;
 }
 
 .labels {
@@ -439,6 +446,7 @@ body:after {
 	color: var(--light-green);
 	font-family: "Noto Serif", serif;
 	letter-spacing: 0.22px;
+	font-weight: 400;
 }
 
 .form {
@@ -468,6 +476,7 @@ body:after {
 	width: 290px;
 	height: 54px;
 	font-family: "Noto Serif", serif;
+	font-weight: 400px;
 }
 
 .form::after {
@@ -490,6 +499,7 @@ body:after {
 	border-radius: 0px;
 	height: 56px;
 	font-family: "Noto Serif", serif;
+	font-weight: 400;
 }
 
 /* footer section */
@@ -514,6 +524,7 @@ body:after {
 	font-size: 14px;
 	font-family: "Noto Serif", serif;
 	letter-spacing: 0.76px;
+	font-weight: 400;
 }
 
 .footercontent {
@@ -556,6 +567,8 @@ body:after {
 	text-align: center;
 	color: var(--light-green);
 	font-size: 20px;
+	font-family: "Noto Serif", serif;
+	font-weight: 700;
 }
 
 .container {
@@ -590,6 +603,7 @@ body:after {
 
 .aboutbreakline {
 	width: 166px;
+	border-bottom: 4px solid var(--primary-green);
 }
 
 .buybtn {
